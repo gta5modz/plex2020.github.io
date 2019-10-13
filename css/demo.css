@@ -565,7 +565,7 @@ header span{
 
 @media only screen and (max-width:600px) {
   header h1 {
-    font-size: 3.9rem;
+    font-size: 4rem;
     letter-spacing: -.07rem;
   }
 
