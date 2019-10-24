@@ -41,6 +41,12 @@
  * github.com/necolas/normalize.css
  *
  * ------------------------------------------------------------------- */
+.hidden{
+  display: none;
+  visibility: hidden;
+}
+
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
