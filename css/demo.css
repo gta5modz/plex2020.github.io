@@ -4,7 +4,149 @@
  *  04-16-2018
  *
  * =================================================================== */
+/* ===================================================================
+ * # home
+ *
+ * ------------------------------------------------------------------- */
+
+
+
+
+
+.s-home {
+  width: 100%;
+  height: 100vh;
+  min-height: 786px;
+  background-color: transparent;
+  position: relative;
+  display: table;
+}
+
+.s-home::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  opacity: .7;
+  z-index: 2;
+}
+
+.s-home::after {
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: .5;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.s-home .grid-overlay > div {
+  display: none;
+}
+
+.no-js .s-home {
+  background: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /** 
+/* ------------------------------------------------------------------- 
+ * ## home video link
+ * ------------------------------------------------------------------- */
+.home-content__video {
+  display: inline-block;
+  margin-top: 4.2rem;
+}
+
+.home-content__video .video-link {
+  display: block;
+  text-align: center;
+  width: 20rem;
+  outline: none;
+  position: relative;
+}
+
+.home-content__video .video-icon {
+  display: inline-block;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  background-color: #ec008c;
+  background-image: url(../images/icons/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: 55% center;
+  background-size: 24px 27px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.home-content__video .video-text {
+  display: inline-block;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 1;
+  color: #ec008c;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+
+.home-content__video .video-link:hover .video-text {
+  color: white;
+}
+
+.home-content__video .video-link:hover .video-icon {
+  background-color: #940158;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------- 
+ * ## responsive video container
+ * ------------------------------------------------------------------- */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /** 
 * ===================================================================
