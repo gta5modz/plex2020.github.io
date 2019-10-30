@@ -4,10 +4,44 @@
  *  04-16-2018
  *
  * =================================================================== */
-/* ===================================================================
- * # home
- *
+/* ------------------------------------------------------------------- 
+ * ## home content
  * ------------------------------------------------------------------- */
+.home-content {
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 6.6rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+}
+
+.home-content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18rem;
+  line-height: 1;
+  letter-spacing: -.02em;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.home-content h3 {
+  margin-top: 1.2rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 3.8rem;
+  line-height: 1.342;
+  font-style: normal;
+  color: #9c9c9c;
+}
+
+.home-content__main {
+  position: relative;
+  text-align: center;
+}
 
 
 
